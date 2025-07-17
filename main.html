@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ink & Code | Digital Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100..900&family=Caveat:wght@400..700&family=Orbit&display=swap"display="swap" rel="stylesheet">
+  <link rel="preload" as="style" href="./css/reset.css">
+  <link rel="preload" href="./css/load.css" as="style" fetchpriority="high">
+  <link rel="stylesheet" href="./css/load.css" as="style">
+  <link rel="stylesheet" href="./css/style.css" as="style">
+
+    <link rel="preload" as="image" href="./assets/hero-lg.svg">
+    <link rel="preload" as="image" href="./assets//hero-sm.png">
+    
+    </head>
+
+  <body>
+  <header class="header">
+      <div class="header-logo">
+      <picture>
+        <source media="(min-width: 600px)" srcset="./assets/logo-lg.png">
+        <source media="(max-width: 599px)" srcset="./assets/logo-sm.png">
+        <img class="logo"></img>
+      </div>
+      <div class="header-nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-overlay"></div>
+        <nav class="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <li class="has-submenu">
+        <input type="checkbox" id="ink-toggle" class="submenu-toggle">
+        <label for="ink-toggle">
+          Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
+        </label>
+        <ul class="submenu">
+          <li><a href="#">Brand Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Print Media</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <input type="checkbox" id="code-toggle" class="submenu-toggle">
+        <label for="code-toggle">
+          Code <span class="chevron">&#x25BE;</span>
+        </label>
+        <ul class="submenu">
+          <li><a href="code.html/#webdevelop">Web Development</a></li>
+          <li><a href="code.html/#SEO">SEO & Performance</a></li>
+          <li><a href="code.html/#hosting">Web Hosting & Maintenance</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+      </div>
+  </header>
+  <hero class="hero">
+    <picture class="hero-img">
+            <source media="(min-width: 601px)" srcset="./assets/hero-lg.svg">
+            <source media="(max-width: 600px)" srcset="./assets/hero-sm.png">
+            <img class="hero-img" fetchpriority="high" width="1800" height="750" aria-label="curved multi colored modern metallic sculpture"
+            src="./assets/hero-lg.svg">
+          </picture>    
+      <h1 class="hero-text">
+        <div class="row">
+            <a href="#collaborate" class="items">
+              <span class="numbers">01</span>
+          
+                <span class="headline">Collaborate/</span>
+              </a>
+            <!-- </div> -->
+         
+          <a href="#design" class="items">
+            <span class="numbers">02</span>
+            <span class="headline">Design/</span>
+            </a>
+          <!-- </div> -->
+        </div>
+        <div class="row">
+        <a href="#create" class="items">
+          <span class="numbers">03</span>
+          <span class="headline">Create/</span>
+          </a>
+        <a href="#succeed" class="items">
+          <span class="numbers">04</span>
+          <span class="headline">Succeed/</span>
+        </a>
+        </div>
+      </h1>
+    </hero>
+    </div>
+  <main>
+  <section class="container headline">
+    <h2>
+      <div class="row">
+        <span class="outline">Scalable</span> 
+        <div class="subheading">digital solutions</div>
+      </div>
+      <div class="row subheading">to empower businesses of all sizes.</div>
+    </h2>
+    <p>
+      At Ink&Code, we don’t believe in cookie-cutter solutions or inflated prices. Our team of experienced designers and developers crafts unique, eye-catching digital experiences with your brand’s vibe at the heart.
+      Say goodbye to boring design and hello to smart, effective creativity at Ink&Code — where we break boundaries, not budgets.
+    </p>
+    <div class="row">
+      <a href="#contact" class="cta-btn" aria-role="button">
+        <span class="button-text">Let's Create</span>
+        <span class="ellipse-overlay">
+          &#x279C
+        </span>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="process">
+  <section class="container process-desc" id="collaborate">
+    <div class="row">
+    <img alt="" src="./assets/collab-icon.png" loading="lazy">
+    <div class="text">
+      <div class="title">
+          <h2>Collaborate/</h2>
+          <span class="numbers">01</span>
+      </div>
+      <h3>with Experts Who Get You</h3>
+    </div>
+    </div>
+    <p>We don’t just build websites—we build relationships. We take the time to understand your vision, goals, and audience and work hand-in-hand to create designs that truly reflect your brand’s spirit.</p>
+  </section>
+
+  <section class="container process-desc" id="design">
+    <div class="row">
+      <img alt="" src="./assets/design-icon.png" loading="lazy">
+    <div class="text">
+      <div class="title">
+          <h2>Design/</h2>
+          <span class="numbers">02</span>
+        </div>
+      <h3>that Reflects Your Brand</h3>  
+      </div>
+      
+    </div>
+    <p>Great design is more than just aesthetics—it’s a statement. We craft striking, memorable designs that make your brand stand out. Our services are built for those who dare to be noticed.</p>
+  </section>
+
+  <section class="container process-desc" id="create">
+    <div class="row">
+      <img alt="" src="./assets/create-icon.png" loading="lazy">
+    <div class="text">
+      <div class="title">
+        <h2>Create/</h2>
+        <span class="numbers">03</span> 
+      </div>
+      <h3>with Passion and Precision</h3> 
+    </div>
+        
+    </div>
+    <p>From wireframe to launch, we handle every aspect of your project with precision and passion. We create responsive, functional, and visually captivating websites that thrive in a competitive landscape. </p>
+    <div>
+      <div class="container">
+        <ul class="service-list">
+          <li>Custom coding for full control</li>
+          <li>Mobile-first, responsive designs</li>
+          <li>Fast, reactive websites</li>
+          <li>Robust SEO and performance optimization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </section>
+  <div style="position: relative;"><img class="waves" width=100% src="assets/wavesObliqGreen.svg">
+  </div>
+
+  <div class="light-section">
+    <section class="container process-desc" id="succeed">
+      <div class="row">
+        <img alt="" src="./assets/succeed-icon.png" loading="lazy">
+        <div class="text">
+          <div class="title">
+            <h2>Succeed/</h2>
+            <span class="numbers">04</span>
+          </div>
+          <h3>with Bold Strategies</h3>
+        </div>
+      </div>
+      <p>Success is built on strategy - not luck. We empower businesses of all sizes - from solopreneurs and small businesses to enterprise organizations - to thrive through bold branding, creative design, strong web deployment and a strategic digital presence.</p>
+    </section>
+    <div style="position: relative">
+      <img class="pricing-waves" width=100% src="assets/wavesObliqGreen.svg" style="transform: rotateY(180deg);">
+    </div>
+    <section class="container pricing">
+        <h2>Affordable Doesn’t Mean Ordinary</h2>
+        <div>
+        <a href="#"class="cta-btn" aria-role="button">
+          <span class="button-text">See Our Pricing</span>
+          <span class="ellipse-overlay">&#x279C</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="container">
+    <section class="container custom-sites">
+      <h2>Why custom websites are a superior option</h2>
+        <h3>Get Searched/</h3>
+          <p>Optimized from the ground up for SEO, we fine-tune your site to climb search rankings and get discovered.</p>
+        <h3>Quality Views/</h3>
+          <p>Templates are designed to fit everyone. We design to fit you.</p>
+        <div style="position:relative; width: 100vw; margin-inline: auto;">
+          <img class="watermark"
+              width=250
+              src="assets/watermark.svg" alt="">
+        </div>
+        <h3>Capture Your Audience/</h3>
+          <p>With visuals, messaging, and flow, your website becomes a reflection of your audience - turning connections into clicks.</p>
+        <h3>Increase Your Business/</h3>      
+          <p>Custom websites don’t just look better - they convert better. With targeted calls-to-action and experiences, your visitors are more likely to customers.</p>
+    </section>
+    </div>
+
+    <section class="container platforms">
+        <h2>Platforms We Work With</h2>
+        
+        <div class="platform-icons">
+          <img width=120
+          height=120px
+          src="assets/WordPress.svg" alt="WordPress">
+          <img width=90 
+          src="assets/Squarespace.png" alt="Squarespace">
+          <img width=90 
+          src='assets/Hubspot.png' alt="Hubspot">
+          <img width=90 
+          src="assets/Shopify.png" alt="Shopify">
+          <img width="90" 
+          src="assets/WooCommerce.png" alt="Woocommerce">
+    
+        </div>
+        <p>At Ink&Code, we believe custom-built websites offer unmatched flexibility, performance, and brand authenticity. But we also know many businesses rely on familiar platforms - so we meet you where you are. </p>
+    </section>
+  </div>
+ 
+  <section class="contact" id="contact">
+      <span>Get In Touch</span>
+      <h2>Ready To Collaborate?</h2>
+      <script type="text/javascript"> var submitted=false</script> 
+      <iframe
+        name="hiddenSubmit"
+        id="hiddenSubmit" 
+        style="display: none;" 
+        onload="if(submitted)
+        {window.location='submit.html'};">
+      </iframe>
+      <form 
+      class="contact-form"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdGSbl2NHThGbI2LvTBIf-UBqRXg71cmHLuW-JlBYoeza8rBQ/formResponse"
+      method="post"
+      target="hiddenSubmit"
+      onSubmit="submitted=true"
+      >
+        <input type="text" name="entry.2005620554" placeholder="Name">
+        <input type="email" name="entry.1045781291" placeholder="Email">
+        <input type="tel" name="entry.1166974658" placeholder="Phone">
+        
+        <label for="entry.839337160">I Want To Talk To You About...</label>
+        <select name="entry.839337160" id="entry.839337160">
+          <option value="Making A Website">Making A Website</option>
+          <option value="Updating My Website">Updating My Website</option>
+          <option value="Improving My Searches">Improving My Searches</option>
+          <option value="Designing Something Pretty">Designing Something Pretty</option>
+          <option value="Hosting and Maintaining My Website">Hosting and Maintaining My Website</select>
+        </select>
+        <textarea name="entry.1389680958" placeholder="Your Message or Questions"></textarea>
+        <button type="submit">Contact Us</button>
+      </form>
+     <img class="waves" 
+        src="assets/wavesObliqPurple.svg" width="100%">
+  </section>
+  
+</main>
+  <footer class="footer">
+    
+ 
+      <div>
+      <div class="social"></div>
+      </div>
+      <span>&copy; 2025 Ink&Code. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
