@@ -209,6 +209,12 @@ h2 {
     bottom: 1em;
     z-index: 10; 
       }
+.hero-text .row:first-of-type .items:first-of-type .headline {
+color: #EDEDED;
+-webkit-text-stroke: 0;
+transform: scale(1.2);
+}
+
 .hero-img {
     position: absolute;
     height: auto;
@@ -262,11 +268,7 @@ height: 740px;
 transition: all 0.3s ease;
 cursor: pointer;
 }
-.hero-text-row:first-of-type .hero-text-headline:first-child {
-color: #EDEDED;
--webkit-text-stroke: 0;
-transform: scale(1.2);
-}
+
 
 /* When any non-first item is hovered, outline the first */
 .hero-text:has(.hero-text-headline:not(:first-child):hover) .hero-text-headline:first-child {
