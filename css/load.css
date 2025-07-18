@@ -53,10 +53,18 @@ h2 {
     height: var(--header-height);
     grid-area: header;
     background: linear-gradient(270deg, #535353 0%, #3D3E68 27.21%, #1E1F50 100%);
-    .logo {
+    .header-logo {
         display: flex;
-        width: 200px;
-        padding: 0.6em;
+        position: relative;
+        width: clamp(200px, 30vw, 500px);
+        height: auto;
+        padding: 0.4em;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+        color: var(--white);
+        border: 2px solid blue;
     }
     .header-nav {
         display: flex;
@@ -116,19 +124,25 @@ h2 {
         min-height: 60%;
         height: auto;
         background: rgba(30, 31, 80, 0.98);
-        padding: 6rem 2rem;
+        padding: 2rem;
         transition: right 0.4s ease;
         z-index: 205;
         display: flex;
         flex-direction: column;
         overflow-y: auto;
+        .mini-logo {
+            position: relative;
+            fill: var(--white);
+            width: 60px;
+            height: auto;
+        }
         ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin-inline: 1em;
         }
         li {
-            margin-bottom: 2rem;
+            margin-block-end: 1rem;
         }
         a, label {
         color: #EDEDED;
