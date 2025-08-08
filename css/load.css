@@ -290,142 +290,103 @@ font-size: var(--fs-base);
 .header {
     min-height: var(--wide-header-height);
     height: 100%;
-    /* .nav-toggle-label {
-        display: none;
-    }
-   .main-nav {
-        position: relative;
-        top: 1%;
-        right: auto;
-        width: 100%;
-        min-height: 0;
-        height: auto;
-        background: transparent;
-        padding: 2rem;
-        z-index: 205;
-        .mini-logo {
-            display: none;
-        }
-        .nav-items {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            padding: 0;
-            margin-inline: 3em;
-        }
-        li {
-            display: flex;
-            flex-direction: column;
-            margin-block: 0.2em;
-        }
-        a, label {
-        color: #EDEDED;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: var(--fs-base);
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        cursor: pointer;
-        }
-    } */
     .header-nav {
     display: flex;
     justify-content: space-between;
     padding-inline: 2em;
-  }
-
-  .nav-toggle,
-  .nav-toggle-label,
-  .nav-overlay {
-    display: none;
-  }
-
-  .main-nav {
-    position: static;
-    transform: none;
-    height: auto;
-    width: auto;
-    background: transparent;
-    padding: 0;
-    .mini-logo {
-            display: none;
-        }
-  }
-
-  .nav-items {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-items li {
-    position: relative;
-    flex-direction: column; /* Required to position submenu absolutely inside */
-  }
-
-  .has-submenu .submenu {
-    all: unset;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 1em;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(6px);
-    border-radius: 4px;
-    z-index: 50;
-    min-width: 180px;
-  }
-
-  .has-submenu:hover .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: block;
-    width: 100vw;
-  }
-
- .nav-items > li > a:hover {
-  color: purple;
-}
-
-  .submenu-toggle {
-    display: none; /* hide mobile checkboxes on desktop */
-  }
-
-
-  .submenu a {
-    display: block;
-    padding: 0.2em 1em;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: transform ease 0.3s;
-    z-index: 100;
-  }
-
-  .submenu a:hover {
-    transform: scale(1.1) translate(10px);
-  }
-
-  /* Optional nav link styling */
-  .nav-items > li > a,
-  .has-submenu > label {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 0.5em 0.2em;
-    display: inline-block;
-  }
-    .has-submenu:hover .chevron {
-        transform: rotate(180deg);
-        transition: transform 0.3s ease;
     }
+
+    .nav-toggle,
+    .nav-toggle-label,
+    .nav-overlay {
+        display: none;
+    }
+
+    .main-nav {
+        position: static;
+        transform: none;
+        height: auto;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        .mini-logo {
+                display: none;
+            }
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-items li {
+        position: relative;
+        flex-direction: column; /* Required to position submenu absolutely inside */
+    }
+
+    .has-submenu .submenu {
+        all: unset;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(6px);
+        border-radius: 4px;
+        z-index: 50;
+        min-width: 180px;
+    }
+
+    .has-submenu:hover .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block;
+        width: 100vw;
+    }
+
+    .nav-items > li > a:hover {
+    color: purple;
+    }
+
+    .submenu-toggle {
+        display: none; /* hide mobile checkboxes on desktop */
+    }
+
+
+    .submenu a {
+        display: block;
+        padding: 0.2em 1em;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: transform ease 0.3s;
+        z-index: 100;
+    }
+
+    .submenu a:hover {
+        transform: scale(1.1) translate(10px);
+    }
+
+    /* Optional nav link styling */
+    .nav-items > li > a,
+    .has-submenu > label {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 0.5em 0.2em;
+        display: inline-block;
+    }
+        .has-submenu:hover .chevron {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
 }
 
 .hero {
