@@ -178,7 +178,7 @@ p {
   font-family: Nunito, Arial, Helvetica, sans-serif;
   font-size: var(--fs-md);
   font-weight: 600;
-  line-height: 32px; /* 145.455% */
+  line-height: 28px; /* 145.455% */
   letter-spacing: -0.44px;
   margin-bottom: 1.5rem;
 }
@@ -532,11 +532,18 @@ ul.custom-benefits li::before {
     }
   }
   h3 {
+    margin-block: 1.2em 0;
     text-align: center;
-    font-weight: 400;
+    font-size: var(--fs-lg);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 22px;
+    letter-spacing: -0.36px;
   }
   h4 {
-    font-weight: 300;
+    font-weight: 200;
+    margin-block: 0 0.8em;
+    
   }
 }
 
