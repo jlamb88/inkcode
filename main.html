@@ -20,83 +20,28 @@
 </head>
 
 <body>
-  <header class="header">
-      <div class="header-logo">
-        <svg viewBox="0 0 236 58" aria-label="Full Logo" role="img" preserveAspectRatio="xMidYMid meet">
-          <use href="#fullLogo"/>
-        </svg>
-      </div>
-      <div class="header-nav">
-        <input 
-          type="checkbox" id="nav-toggle" class="nav-toggle"
-          aria-controls="main-nav"
-        >
-        <label 
-          for="nav-toggle" class="nav-toggle-label" aria-label="navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="nav-overlay"></div>
-        <nav class="main-nav">
-          <svg class="mini-logo">
-            <use href="assets/logos.svg#miniLogo" />
-          </svg>
-      <ul class="nav-items">
-        <li class="has-submenu">
-          <input type="checkbox" id="ink-toggle" class="submenu-toggle"
-          aria-haspopup="true">
-          <label for="ink-toggle">
-            Ink <span class="chevron">&#x25BE;</span>
-          </label>
-          <ul class="submenu" role="menu">
-            <li><a href="#" role="menuitem">Brand Design</a></li>
-            <li><a href="#" role="menuitem">Web Design</a></li>
-            <li><a href="#" role="menuitem">Print Media</a></li>
-          </ul>
-        </li>
-
-        <li class="has-submenu">
-          <input type="checkbox" id="code-toggle" class="submenu-toggle">
-          <label for="code-toggle">
-            Code <span class="chevron">&#x25BE;</span>
-          </label>
-          <ul class="submenu">
-            <li><a href="code.html/#webdevelop">Web Development</a></li>
-            <li><a href="code.html/#SEO">SEO & Performance</a></li>
-            <li><a href="code.html/#hosting">Web Hosting & Maintenance</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html">CTRL + Us</a></li>
-        <li><a href="#contact">Hit Us Up</a></li>
-      </ul>
-    </nav>
-      </div>
-  </header>
+  <header-comp></header-comp>
+ 
   <hero class="hero-home">
     <picture class="hero-img">
-            <source media="(min-width: 601px)" srcset="./assets/hero-lg-home.svg">
-            <source media="(max-width: 600px)" srcset="./assets/hero-sm-home.png">
-            <img class="hero-img" fetchpriority="high" width="1800" height="750" aria-label="curved multi colored modern metallic sculpture"
-            src="./assets/hero-lg.svg">
-          </picture>
-      <h1 class="hero-reader">Collaborate, Design, Create, Succeed</h1>
-        <div class="hero-text">
-        <div class="row">
-            <a href="#collaborate" class="items">
-              <span class="numbers">01</span>
-
-                <span class="text">Collaborate/</span>
-              </a>
-            <!-- </div> -->
-
-          <a href="#design" class="items">
-            <span class="numbers">02</span>
-            <span class="text">Design/</span>
-            </a>
-          <!-- </div> -->
-        </div>
-        <div class="row">
+      <source media="(min-width: 601px)" srcset="./assets/hero-lg-home.svg">
+      <source media="(max-width: 600px)" srcset="./assets/hero-sm-home.png">
+      <img class="hero-img" fetchpriority="high" width="1800" height="750" aria-label="curved multi colored modern metallic sculpture"
+      src="./assets/hero-lg.svg">
+    </picture>
+    <h1 class="hero-reader-ada">Collaborate, Design, Create, Succeed</h1>
+    <div class="hero-text">
+      <div class="row">
+        <a href="#collaborate" class="items">
+          <span class="numbers">01</span>
+          <span class="text">Collaborate/</span>
+        </a>
+        <a href="#design" class="items">
+          <span class="numbers">02</span>
+          <span class="text">Design/</span>
+        </a>
+      </div>
+      <div class="row">
         <a href="#create" class="items">
           <span class="numbers">03</span>
           <span class="text">Create/</span>
@@ -105,17 +50,19 @@
           <span class="numbers">04</span>
           <span class="text">Succeed/</span>
         </a>
-        </div>
       </div>
-    </hero>
-  <main>
+    </div>
+  </hero>
+<main>
   <section class="container headline">
     <h2>
       <div class="row">
         <span class="outline">Scalable</span>
         <div class="subheading">digital solutions</div>
       </div>
-      <div class="row subheading">to empower businesses of all sizes.</div>
+      <div class="row subheading">to empower businesses of all sizes.
+
+      </div>
     </h2>
     <p>
       At Ink&Code, we don’t believe in cookie-cutter solutions or inflated prices. Our team of experienced designers and developers crafts unique, eye-catching digital experiences with your brand’s vibe at the heart.

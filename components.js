@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-     
+    <header class="header">
       <div class="header-logo">
         <svg viewBox="0 0 236 58" aria-label="Full Logo" role="img" preserveAspectRatio="xMidYMid meet">
           <use href="#fullLogo"/>
@@ -23,23 +23,26 @@ class Header extends HTMLElement {
           <span></span>
         </label>
         <div class="nav-overlay"></div>
-        <nav class="main-nav">
+        <nav class="navbar">
           <svg class="mini-logo">
             <use href="assets/logos.svg#miniLogo" />
           </svg>
-      <ul class="nav-items">
-        <li class="has-submenu">
-          <input type="checkbox" id="ink-toggle" class="submenu-toggle"
-          aria-haspopup="true">
-          <label for="ink-toggle">
-            Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
-          </label>
-          <ul class="submenu" role="menu">
-            <li><a href="#" role="menuitem">Brand Design</a></li>
-            <li><a href="#" role="menuitem">Web Design</a></li>
-            <li><a href="#" role="menuitem">Print Media</a></li>
-          </ul>
-        </li>
+          <ul class="nav-items">
+            <li class="has-submenu">
+              <input type="checkbox" id="ink-toggle" class="submenu-toggle"
+              aria-haspopup="true">
+              <label for="ink-toggle">
+                Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
+              </label>
+              <ul class="submenu" role="menu">
+                <div class="menu-title">
+                  <span>Graphic Design</span>
+                <div class="menu-items">
+                  <li><a href="#" role="menuitem">Brand Design</a></li>
+                  <li><a href="#" role="menuitem">Web Design</a></li>
+                  <li><a href="#" role="menuitem">Print Media</a></li>
+              </ul>
+            </li>
 
         <li class="has-submenu">
           <input type="checkbox" id="code-toggle" class="submenu-toggle">
@@ -57,8 +60,8 @@ class Header extends HTMLElement {
       </ul>
     </nav>
       </div>
-  
-    `;
+    </header>
+     `;
   }
 }
 
