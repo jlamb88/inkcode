@@ -84,7 +84,7 @@
     --fs-xxxl: 4rem;
     --fs-h1: 4.8rem;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 900px) {
     :root {
       --fs-xs: 1.2rem;
       --fs-sm: 1.5rem;
@@ -125,7 +125,7 @@ body {
   color: var(--light-text-color);
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #1E1F50 0%,#1E1F50 20%, #4B5566 35%, #FFFFFF 40%);
+  /* background: linear-gradient(to bottom, #1E1F50 0%,#1E1F50 20%, #4B5566 35%, #FFFFFF 40%); */
 }
 
 html {
@@ -235,7 +235,8 @@ pre code {
   border: none;
   display: block;
 }
-.hero-home {
+/* .hero-home {
+  background: #1E1F50;
   .numbers {
     position: relative;
     color: #fff;
@@ -282,7 +283,7 @@ pre code {
     .row:first-child .items:first-of-type {
       transform: scale(1.1);
     }
-  }
+  } */
 
 .cta-btn {
   position: relative;
@@ -1158,11 +1159,29 @@ ul.custom-benefits li::before {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   :root {
     --body-padding: 1rem;
   }
+
+
+  .process {
+    display: inline-flex;
+    flex-wrap: wrap;
+    background: rgb(217, 217, 217, 0.10);
+    border-radius: 12px;
+    width: 92%;
+    margin-inline: auto;
+    .process-desc {
+      width: 46%;
+      height: 425px;
+      margin-block: 1em;
+      border-radius: 12px;
+      background: rgba(83, 83, 114, 0.80);
+      box-shadow: 2px 2px 4px 2px #463E74;
+    }
+    .desc-content {
+      margin-block: auto;
+    }
+  }
 }
-
-
-/* Responsive Design */

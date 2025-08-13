@@ -5,61 +5,64 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header class="header">
-      <div class="header-logo">
-        <svg viewBox="0 0 236 58" aria-label="Full Logo" role="img" preserveAspectRatio="xMidYMid meet">
-          <use href="#fullLogo"/>
-        </svg>
-      </div>
-      <div class="header-nav">
-        <input 
-          type="checkbox" id="nav-toggle" class="nav-toggle"
-          aria-controls="main-nav"
-        >
-        <label 
-          for="nav-toggle" class="nav-toggle-label" aria-label="navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="nav-overlay"></div>
-        <nav class="navbar">
-          <svg class="mini-logo">
-            <use href="assets/logos.svg#miniLogo" />
-          </svg>
-          <ul class="nav-items">
-            <li class="has-submenu">
-              <input type="checkbox" id="ink-toggle" class="submenu-toggle"
-              aria-haspopup="true">
-              <label for="ink-toggle">
-                Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
-              </label>
-              <ul class="submenu" role="menu">
-                <div class="menu-title">
-                  <span>Graphic Design</span>
-                <div class="menu-items">
-                  <li><a href="#" role="menuitem">Brand Design</a></li>
-                  <li><a href="#" role="menuitem">Web Design</a></li>
-                  <li><a href="#" role="menuitem">Print Media</a></li>
-              </ul>
-            </li>
-
+    
+<header class="header">
+  <div class="header-logo">
+    <svg viewBox="0 0 236 58" aria-label="Full Logo" role="img" preserveAspectRatio="xMidYMid meet">
+      <use href="#fullLogo"/>
+    </svg>
+  </div>
+  <div class="header-nav">
+    <input 
+      type="checkbox" id="nav-toggle" class="nav-toggle"
+      aria-controls="navbar">
+    <label 
+      for="nav-toggle" 
+      class="nav-toggle-label" aria-label="navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="nav-overlay"></div>
+    <nav class="navbar">
+      <svg class="mini-logo">
+        <use href="../assets/logos.svg#miniLogo" />
+      </svg>
+      <ul class="nav-items">
+        <li class="has-submenu">
+          <input type="checkbox" id="ink-toggle" class="submenu-toggle"
+          aria-haspopup="true">
+          <label for="ink-toggle">
+            Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
+          </label>
+          <ul class="submenu" role="menu">
+            <span class="menu-title">Graphic Design</span>
+            <div class="menu-items">
+              <li><a href="#" role="menuitem">Brand Design</a></li>
+              <li><a href="#" role="menuitem">Web Design</a></li>
+              <li><a href="#" role="menuitem">Print Media</a></li>
+            </div>
+          </ul>
+        </li>
         <li class="has-submenu">
           <input type="checkbox" id="code-toggle" class="submenu-toggle">
           <label for="code-toggle">
             Code <span class="chevron">&#x25BE;</span>
           </label>
           <ul class="submenu">
-            <li><a href="code.html/#webdevelop">Web Development</a></li>
-            <li><a href="code.html/#SEO">SEO & Performance</a></li>
-            <li><a href="code.html/#hosting">Web Hosting & Maintenance</a></li>
+            <span class="menu-title">Web Services</span>
+            <div class="menu-items">
+              <li><a href="code.html/#webdevelop">Web Development</a></li>
+              <li><a href="code.html/#SEO">SEO & Performance</a></li>
+              <li><a href="code.html/#hosting">Web Hosting & Maintenance</a></li>
+            </div>
           </ul>
         </li>
         <li><a href="about.html">CTRL + Us</a></li>
         <li><a href="#contact">Hit Us Up</a></li>
-      </ul>
-    </nav>
-      </div>
+  </ul>
+</nav>
+</div>
     </header>
      `;
   }

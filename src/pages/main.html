@@ -8,14 +8,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100..900&family=Caveat:wght@400..700&family=Orbit&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="./css/reset.css">
-  <link rel="preload" href="./css/load.css" as="style" fetchpriority="high">
+  <link rel="preload" href="../css/load.css" as="style" fetchpriority="high" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
-  <link rel="stylesheet" href="css/reset.css" as="style">
-  <link rel="stylesheet" href="./css/load.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" as="style">
-  <link rel="preload" as="image" href="./assets/hero-lg.svg">
-  <link rel="preload" as="image" href="assets/hero-sm.png">
-  <script src="components.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="../css/reset.css" as="style">
+  <!-- <noscript><link rel="stylesheet" href="../css/style.css" as="style"></noscript> -->
+  
+  <link rel="stylesheet" href="../css/style.css" as="style">
+  <link rel="preload" as="image" href="../assets/hero-lg.svg">
+  <link rel="preload" as="image" href="../assets/hero-sm.png">
+  <script src="../components/components.js" type="text/javascript" defer></script>
     
 </head>
 
@@ -23,11 +24,11 @@
   <header-comp></header-comp>
  
   <hero class="hero-home">
-    <picture class="hero-img">
-      <source media="(min-width: 601px)" srcset="./assets/hero-lg-home.svg">
-      <source media="(max-width: 600px)" srcset="./assets/hero-sm-home.png">
+    <picture>
+      <source media="(min-width: 601px)" srcset="../assets/hero-lg-home.svg">
+      <source media="(max-width: 600px)" srcset="../assets/hero-sm-home.png">
       <img class="hero-img" fetchpriority="high" width="1800" height="750" aria-label="curved multi colored modern metallic sculpture"
-      src="./assets/hero-lg.svg">
+      src="../assets/hero-lg-home.svg">
     </picture>
     <h1 class="hero-reader-ada">Collaborate, Design, Create, Succeed</h1>
     <div class="hero-text">
@@ -83,8 +84,9 @@
 
   <section class="process">
   <section class="container process-desc" id="collaborate">
+    <div class="desc-content">
     <div class="row">
-    <img alt="" src="./assets/collab-icon.png" loading="lazy">
+    <img alt="" src="../assets/collab-icon.png" loading="lazy">
     <div class="text">
       <div class="title">
           <h2>Collaborate/</h2>
@@ -94,11 +96,13 @@
     </div>
     </div>
     <p>We don’t just build websites—we build relationships. We take the time to understand your vision, goals, and audience and work hand-in-hand to create designs that truly reflect your brand’s spirit.</p>
+  </div>
   </section>
 
   <section class="container process-desc" id="design">
+    <div class="desc-content">
     <div class="row">
-      <img alt="" src="./assets/design-icon.png" loading="lazy">
+      <img alt="" src="../assets/design-icon.png" loading="lazy">
     <div class="text">
       <div class="title">
           <h2>Design/</h2>
@@ -108,12 +112,14 @@
       </div>
 
     </div>
-    <p>Great design is more than just aesthetics—it’s a statement. We craft striking, memorable designs that make your brand stand out. Our services are built for those who dare to be noticed.</p>
+    <p>Great design is more than just aesthetics — it’s a statement. We craft striking, memorable designs that make your brand stand out. Our services are built for those who dare to be noticed.</p>
+  </div>
   </section>
 
   <section class="process-desc container" id="create">
+    <div class="desc=content">
     <div class="row">
-      <img alt="" src="./assets/create-icon.png" loading="lazy">
+      <img alt="" src="../assets/create-icon.png" loading="lazy">
     <div class="text">
       <div class="title">
         <h2>Create/</h2>
@@ -124,6 +130,28 @@
 
     </div>
     <p>From wireframe to launch, we handle every aspect of your project with precision and passion. We create responsive, functional, and visually captivating websites that thrive in a competitive landscape. </p>
+  </div>
+  </section>
+  <section class="container process-desc" id="succeed">
+      <div class="desc-content">
+      <div class="row">
+        <img alt="" src="../assets/succeed-icon.png" loading="lazy">
+        <div class="text">
+          <div class="title">
+            <h2>Succeed/</h2>
+            <span class="numbers">04</span>
+          </div>
+          <h3>with Bold Design</h3>
+        </div>
+      </div>
+      <p>Success is built on boldness - not luck. We empower businesses of all sizes - from solopreneurs and small businesses to enterprise organizations - to thrive through bold branding, creative design, strong web deployment and a strategic digital presence.</p>
+    </div>
+    </section>
+  </section>
+  <div style="position: relative;"><img class="waves" width=600px src="../assets/wavesObliqGreen.svg">
+  </div>
+
+  <div class="light-section">
     <div class="feature-container">
         <div class="vertical-line-wrapper">
             <svg class="vertical-line">
@@ -146,28 +174,9 @@
             </div>
         </div>
     </div>
-  </section>
-  </section>
-  <div style="position: relative;"><img class="waves" width=600px src="assets/wavesObliqGreen.svg">
-  </div>
-
-  <div class="light-section">
-    <section class="container process-desc" id="succeed">
-      <div class="row">
-        <img alt="" src="./assets/succeed-icon.png" loading="lazy">
-        <div class="text">
-          <div class="title">
-            <h2>Succeed/</h2>
-            <span class="numbers">04</span>
-          </div>
-          <h3>with Bold Design</h3>
-        </div>
-      </div>
-      <p>Success is built on boldness - not luck. We empower businesses of all sizes - from solopreneurs and small businesses to enterprise organizations - to thrive through bold branding, creative design, strong web deployment and a strategic digital presence.</p>
-    </section>
     
     <div style="position:relative">
-      <img class="pricing-waves" width=600px src="assets/wavesObliqGreen.svg">
+      <img class="pricing-waves" width=600px src="../assets/wavesObliqGreen.svg">
     </div>
     <section class="container pricing">
         <h2>Affordable Doesn’t Mean Ordinary</h2>
@@ -197,7 +206,7 @@
         <div style="position:relative; width: 100%; margin-inline: auto;">
           <img class="watermark"
               width=250
-              src="assets/Watermark.svg" alt="">
+              src="../assets/Watermark.svg" alt="">
         </div>
         <h3>Capture Your Audience/</h3>
           <p>With visuals, messaging, and flow, your website becomes a reflection of your audience - turning connections into clicks.</p>
@@ -216,15 +225,15 @@
         <div class="platform-icons">
           <img width=120
           height=120px
-          src="assets/WordPress.svg" alt="WordPress">
+          src="../assets/WordPress.svg" alt="WordPress">
           <img width=90
-          src="assets/Squarespace.png" alt="Squarespace">
+          src="../assets/Squarespace.png" alt="Squarespace">
           <img width=90
-          src='assets/Hubspot.png' alt="Hubspot">
+          src='../assets/Hubspot.png' alt="Hubspot">
           <img width=90
-          src="assets/Shopify.png" alt="Shopify">
+          src="../assets/Shopify.png" alt="Shopify">
           <img width="90"
-          src="assets/WooCommerce.png" alt="Woocommerce">
+          src="../assets/WooCommerce.png" alt="Woocommerce">
 
         </div>
         <p>At Ink&Code, we believe custom-built websites offer unmatched flexibility, performance, and brand authenticity. But we also know many businesses rely on familiar platforms - so we meet you where you are. </p>
@@ -265,7 +274,7 @@
         <button type="submit">Submit</button>
       </form>
         <img class="waves"
-        src="assets/wavesObliqPurple.svg" width="100%"> 
+        src="../assets/wavesObliqPurple.svg" width="100%"> 
   </section>
 
 </main>
@@ -276,9 +285,9 @@
         </svg>
       </div>
       <div class="social">
-        <img src="assets/facebook.svg" width="30px"/>
-        <img src="assets/instagram.svg" width="30px"/>
-        <img src="assets/linkedIn.svg" width="30px"/>
+        <img src="../assets/facebook.svg" width="30px"/>
+        <img src="../assets/instagram.svg" width="30px"/>
+        <img src="../assets/linkedIn.svg" width="30px"/>
         </div>
       </div>
       <nav class="nav-footer">
@@ -298,11 +307,11 @@
         </nav>
       <section class="contact-us">
         <div class="contact-row">
-          <img src="assets/email.svg" width="30"/>
+          <img src="../assets/email.svg" width="30"/>
           <a mailto="info@inkandcode.com">info@inkandcode.com</a>
         </div>
         <div class="contact-row">
-          <img src="assets/phone.svg" width="30px">
+          <img src="../assets/phone.svg" width="30px">
           <span>555-555-1111</span>
         </div>
       </section>
