@@ -1,0 +1,13 @@
+[33mea6bd03[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhome-dvlp[m[33m, [m[1;31morigin/home-dvlp[m[33m)[m mega menu in place - needs formatting / process cards formatted / media sizing in progress
+[33md529da6[m mega menu anchored
+[33mf0cd945[m 	modified:   components.js 	modified:   css/load.css 	modified:   css/style.css 	modified:   main.html#
+[33m4318554[m Merge branch 'code-pricing' of https://github.com/jlamb88/inkcode into home-dvlp
+[33m452dc8d[m[33m ([m[1;31morigin/code-pricing[m[33m, [m[1;32mcode-pricing[m[33m)[m menu dropdowns working
+[33m6338696[m added header/footer components, full size menu not dropping down
+[33mdbee6f8[m mobile nav complete / footer complete
+[33mfed8871[m merge with main
+[33m5b6d204[m feature table corrected
+[33mb60261d[m hero text fixed
+[33m937e26b[m inline SVGs for logos/features table
+[33mbe23729[m load css, mobile menu, form loaded, additional style updates needed
+[33m35d0c44[m Initialize project using Create React App
