@@ -36,7 +36,9 @@ class Header extends HTMLElement {
             Ink <span class="chevron">&#x25BE;</span>  <!-- Unicode ▼ -->
           </label>
           <ul class="submenu" role="menu">
-            <span class="menu-title">Graphic Design</span>
+            <div class="menu-title">
+            <span>Graphic Design</span>
+            </div>
             <div class="menu-items">
               <li><a href="#" role="menuitem">Brand Design</a></li>
               <li><a href="#" role="menuitem">Web Design</a></li>
@@ -50,7 +52,9 @@ class Header extends HTMLElement {
             Code <span class="chevron">&#x25BE;</span>
           </label>
           <ul class="submenu">
-            <span class="menu-title">Web Services</span>
+          <div class="menu-title">
+            <span>Web Services</span>
+          </div>
             <div class="menu-items">
               <li><a href="code.html/#webdevelop">Web Development</a></li>
               <li><a href="code.html/#SEO">SEO & Performance</a></li>
@@ -77,7 +81,6 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-     
       <section class="contact" id="contact">
       <span>Get In Touch</span>
       <h2>Ready To Collaborate?</h2>
@@ -112,10 +115,8 @@ class Footer extends HTMLElement {
         <button type="submit">Submit</button>
       </form>
         <img class="waves"
-        src="assets/wavesObliqPurple.svg" width="100%"> 
+        src="../assets/wavesObliqPurple.svg" width="100%"> 
   </section>
-
-
   <footer class="footer">
       <div>
         <svg class="footer-logo">
@@ -123,9 +124,9 @@ class Footer extends HTMLElement {
         </svg>
       </div>
       <div class="social">
-        <img src="assets/facebook.svg" width="30px"/>
-        <img src="assets/instagram.svg" width="30px"/>
-        <img src="assets/linkedIn.svg" width="30px"/>
+        <img src="../assets/facebook.svg" width="30px"/>
+        <img src="../assets/instagram.svg" width="30px"/>
+        <img src="../assets/linkedIn.svg" width="30px"/>
         </div>
       </div>
       <nav class="nav-footer">
@@ -145,11 +146,11 @@ class Footer extends HTMLElement {
         </nav>
       <section class="contact-us">
         <div class="contact-row">
-          <img src="assets/email.svg" width="30"/>
+          <img src="../assets/email.svg" width="30"/>
           <a mailto="info@inkandcode.com">info@inkandcode.com</a>
         </div>
         <div class="contact-row">
-          <img src="assets/phone.svg" width="30px">
+          <img src="../assets/phone.svg" width="30px">
           <span>555-555-1111</span>
         </div>
       </section>
@@ -157,6 +158,7 @@ class Footer extends HTMLElement {
       <span>&copy; 2025 Ink&Code. All rights reserved.</span>
       </div>
     </div>
+  </section>
   </footer>
     `;
   }

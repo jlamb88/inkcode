@@ -1,0 +1,399 @@
+.hero-code {
+  .hero-text {
+    color: #fff;
+    font-family: "Cascadia Mono";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hero-sub {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.pricing-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  margin: 0 auto;
+  font-family: "Nunito", -apple-system, Roboto, Helvetica, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 5px;
+}
+
+.pricing-tabs {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab-button {
+  width: 100px;
+  height: 24px;
+  border-radius: 8px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.165px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: #616161;
+  color: #fff;
+}
+
+.tab-button:hover {
+  background: #555;
+  color: #fff;
+}
+
+.pricing-chart-web {
+  width: 672px;
+  height: 579px;
+  background: #616161;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  display: flex;
+  border-radius: 0 0 8px 8px;
+}
+
+.features-sidebar {
+  width: 160px;
+  height: 425px;
+  background: #f0f0f0;
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  padding: 20px 24px;
+  box-sizing: border-box;
+}
+
+.features-header {
+  margin-bottom: 32px;
+}
+
+.chart-title {
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.3px;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.chart-description {
+  font-family: "Nunito", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: -0.165px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-row {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.feature-row:nth-child(even) {
+  background: rgba(217, 217, 217, 0.75);
+}
+
+.feature-label {
+  font-family: "Nunito", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.18px;
+}
+
+.pricing-cards-container {
+  position: absolute;
+  top: 5px;
+  left: 169px;
+  display: flex;
+  gap: 6px;
+  height: 476px;
+}
+
+.pricing-card {
+  width: 116px;
+  height: 476px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-header {
+  width: 116px;
+  height: 174px;
+  position: relative;
+}
+
+.pricing-card::before {
+  content: "";
+  width: 105px;
+  height: 474px;
+  background: #f0f0f0;
+  border-radius: 0 16px 16px 0;
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 1;
+}
+
+.plan-banner {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 106px;
+  height: 20px;
+  z-index: 3;
+}
+
+.banner-bg {
+  width: 100%;
+  height: 17px;
+  background: rgba(208, 206, 222, 0.75);
+  position: absolute;
+  top: 0;
+}
+
+.banner-arrow {
+  width: 11px;
+  height: 20px;
+  background: #c9c4d2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 19%, 100% 100%, 0 81%);
+}
+
+.plan-name {
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  font-family: "Poppins", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.21px;
+  text-transform: capitalize;
+  z-index: 4;
+}
+
+.launch-card .card-header::before {
+  content: "";
+  width: 105px;
+  height: 104px;
+  background: #f43068;
+  border-radius: 0 16px 0 0;
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 2;
+}
+
+.liftoff-card .card-header::before {
+  content: "";
+  width: 105px;
+  height: 104px;
+  background: #2c96de;
+  border-radius: 0 16px 0 0;
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 2;
+}
+
+.orbit-card .card-header::before {
+  content: "";
+  width: 105px;
+  height: 104px;
+  background: #43c3a6;
+  border-radius: 0 16px 0 0;
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 2;
+}
+
+.planetary-card .card-header::before {
+  content: "";
+  width: 105px;
+  height: 105px;
+  background: #4245ba;
+  border-radius: 0 16px 0 0;
+  position: absolute;
+  top: 0;
+  left: 11px;
+  z-index: 2;
+}
+
+.plan-icon-container {
+  position: absolute;
+  top: 12px;
+  left: 46px;
+  z-index: 5;
+}
+
+.plan-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.price-circle-container {
+  position: absolute;
+  top: 81px;
+  left: 39px;
+  z-index: 6;
+}
+
+.price-circle {
+  width: 45px;
+  height: 45px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.price-text {
+  font-family: "Orbit", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+}
+
+.launch-price {
+  color: #f43068;
+  font-size: 14px;
+}
+
+.liftoff-price {
+  color: #2c96de;
+}
+
+.orbit-price {
+  color: #43c3a6;
+}
+
+.planetary-price {
+  color: #4245ba;
+}
+
+/* Card Content */
+.card-content {
+  position: absolute;
+  top: 174px;
+  left: 0;
+  width: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 7;
+}
+
+.feature-value {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.165px;
+  text-align: center;
+  position: relative;
+}
+
+.feature-value.pages {
+  margin-bottom: 22px;
+}
+
+.feature-value.design {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.help-icon {
+  width: 11px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #000;
+  cursor: help;
+}
+
+.unavailable {
+  font-size: 16px;
+  color: #000;
+  line-height: 1;
+}
+
+/* Comparison Arrow */
+.comparison-arrow {
+  position: absolute;
+  top: 152px;
+  left: 390px;
+  width: 25px;
+  height: 25px;
+  z-index: 8;
+}
+
+.arrow-background {
+  width: 25px;
+  height: 25px;
+  background: rgba(154, 154, 154, 0.2);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.arrow-icon {
+  width: 14px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 900px) {
+}
