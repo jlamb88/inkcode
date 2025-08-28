@@ -312,7 +312,7 @@ pre code {
     h3 {
       margin-block-start: 0;
       padding-inline-start: 0.5em;
-      min-width: 250px;
+      min-width: 225px;
     }
   }
   .title {
@@ -487,7 +487,6 @@ ul.custom-benefits li::before {
   margin-block: 2em;
   .row {
     position: relative;
-    top: 50px;
   }
   span {
     font-size: var(--fs-md);
@@ -496,13 +495,16 @@ ul.custom-benefits li::before {
     margin-inline: auto;
   }
   h2 {
-    margin-block-end: 0.5em;
+    /* margin-block-end: 0.5em; */
+    position: relative;
+    top: -30px;
     margin-inline: auto;
     text-align: center;
-    width: 70%;
-    font-size: var(--fs-h1);
-    font-weight: 600;
-    line-height: 56px;
+    width: 95%;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -3px;
     color: var(--white);
     text-wrap: nowrap;
   }
@@ -522,11 +524,11 @@ ul.custom-benefits li::before {
     width: 100dvw;
     height: 100%;
     background-color: var(--dark-green);
-    padding-block: 2em;
+    padding-block: 2em 4em;
   }
   .watermark {
     position: absolute;
-    width: 400px;
+    width: 300px;
     left: -10%;
     right: 0;
     margin-inline: auto;
@@ -535,9 +537,10 @@ ul.custom-benefits li::before {
     color: var(--light-gray);
   }
   .cta-btn {
+    position: relative;
+    top: -20px;
     margin-inline-start: 20%;
     margin-block: 0;
-    top: -15px;
     background-color: var(--lightest-gray);
     .button-text {
       color: #50e3c2;
@@ -711,7 +714,7 @@ ul.custom-benefits li::before {
     --body-padding: 1rem;
   }
   section {
-    margin-block-end: 20vw;
+    margin-block-end: 15vw;
   }
   main {
     background: linear-gradient(
@@ -758,33 +761,34 @@ ul.custom-benefits li::before {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    /* background: #8b96aa40; */
+    justify-content: space-evenly;
+    gap: 2em;
+    background: #8b96aa40;
     border-radius: 12px;
     width: 90%;
     margin-inline-start: 5%;
-    margin-block: 3em 8em;
+    margin-block: 3em 12em;
+    padding: 2em;
     .process-desc {
-      width: 40%;
+      width: 45%;
       height: 400px;
-      min-width: 375px;
-      margin-block: 1em;
-      margin-inline-start: 5%;
+      min-width: 450px;
+      margin-block: 0;
+      margin-inline: 0;
       border-radius: 12px;
       /* background: rgba(76, 76, 107, 0.8); */
-      background: var(--white);
+      background: #ffffffc2;
       box-shadow: 2px 2px 4px 2px #494564;
       z-index: 10;
       h2 {
-        font-size: var(--fs-lg);
-        font-weight: 400;
         color: var(--dark-text-color);
+        font-size: var(--fs-xl);
       }
       .title,
       .row {
         flex-direction: row;
         justify-content: flex-start;
-        margin-inline-start: 1em;
+        margin-inline-start: 3em;
         margin-block-end: 0em;
       }
       .title {
@@ -792,7 +796,7 @@ ul.custom-benefits li::before {
       }
       .numbers {
         left: -12px;
-        color: var(--light-gray);
+        color: #9da2ab50;
       }
       h3 {
         margin-inline-start: 20px;
@@ -801,7 +805,7 @@ ul.custom-benefits li::before {
         color: var(--dark-text-color);
       }
       p {
-        width: 80%;
+        width: 70%;
         color: var(--dark-text-color);
       }
     }
@@ -822,21 +826,26 @@ ul.custom-benefits li::before {
       width: 80%;
       max-width: 800px;
       margin-inline: auto;
-      /* font-size: var(--fs-h1); */
       font-size: 96px;
       line-height: 68px;
       font-weight: 500;
       word-wrap: normal;
+      margin-block-end: 0.4em;
     }
     .cta-btn {
       margin-inline-start: 30%;
     }
     p {
       width: 50%;
-      margin-block-end: 0.2em;
+      margin-block-end: 2em;
     }
     h3 {
       font-size: var(--fs-lg);
+    }
+    .pricing-options {
+      span {
+        margin: 0.4em;
+      }
     }
   }
   .pricing-waves {
@@ -861,6 +870,29 @@ ul.custom-benefits li::before {
     }
     .cta-btn {
       margin-inline: 30% auto;
+    }
+
+    .row {
+      position: relative;
+      top: 50px;
+    }
+    span {
+      font-size: var(--fs-md);
+      color: var(--lightest-gray);
+      font-weight: 400;
+      margin-inline: auto;
+    }
+    h2 {
+      margin-block-end: 0.5em;
+      margin-inline: auto;
+      text-align: center;
+      width: 90%;
+      font-size: var(--fs-xxl);
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: -4.2px;
+      color: var(--white);
+      text-wrap: nowrap;
     }
   }
   .platforms {
